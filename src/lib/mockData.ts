@@ -95,7 +95,7 @@ Our lawn maintenance services include precision cutting at optimal heights, clea
       galleryImages: [
         createAsset(
           "lawn-before-1",
-          "https://images.unsplash.com/photo-1574809479390-b2fa6fba09e6?w=600&h=400&fit=crop",
+          "https://plus.unsplash.com/premium_photo-1661954483883-edd65eac3577?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "Before: Overgrown Lawn",
           "Lawn before professional maintenance"
         ),
@@ -107,25 +107,25 @@ Our lawn maintenance services include precision cutting at optimal heights, clea
         ),
         createAsset(
           "lawn-care-2",
-          "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop",
+          "https://plus.unsplash.com/premium_photo-1661954483883-edd65eac3577?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "Edging Work",
           "Precise edge work along walkways"
         ),
         createAsset(
           "lawn-care-3",
-          "https://images.unsplash.com/photo-1503084291214-4ac8ac6f0b5a?w=600&h=400&fit=crop",
+          "https://plus.unsplash.com/premium_photo-1661954483883-edd65eac3577?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "Lawn Striping",
           "Professional lawn striping patterns"
         ),
         createAsset(
           "lawn-care-4",
-          "https://images.unsplash.com/photo-1563985907-c2ca4d894de2?w=600&h=400&fit=crop",
+          "https://plus.unsplash.com/premium_photo-1661954483883-edd65eac3577?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "Trimming",
           "Detail trimming around trees and beds"
         ),
         createAsset(
           "lawn-care-5",
-          "https://images.unsplash.com/photo-1625149813596-2ee5b4d9b68d?w=600&h=400&fit=crop",
+          "https://plus.unsplash.com/premium_photo-1661954483883-edd65eac3577?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "Seasonal Cleanup",
           "Fall leaf removal and cleanup"
         ),
@@ -204,7 +204,7 @@ Our design process includes site analysis, soil testing, drainage evaluation, an
       ],
       featuredImage: createAsset(
         "landscape-design-hero",
-        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1696237583261-029171ee31fa?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "Beautiful Landscape Design",
         "Custom landscape design with native plants and modern hardscaping"
       ),
@@ -223,13 +223,13 @@ Our design process includes site analysis, soil testing, drainage evaluation, an
         ),
         createAsset(
           "design-3",
-          "https://images.unsplash.com/photo-1593770905342-94519fd50ad3?w=600&h=400&fit=crop",
+          "https://plus.unsplash.com/premium_photo-1661954483883-edd65eac3577?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "Native Plant Design",
           "Arkansas native plant landscape"
         ),
         createAsset(
           "design-4",
-          "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop",
+          "https://plus.unsplash.com/premium_photo-1661954483883-edd65eac3577?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "Shade Garden",
           "Elegant shade garden design"
         ),
@@ -320,14 +320,14 @@ Our hardscaping services include natural stone patios, paver installations, reta
       ],
       featuredImage: createAsset(
         "hardscaping-hero",
-        "https://images.unsplash.com/photo-1564013434775-c8b9fb14b4d9?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1713383658782-60a9593d200e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "Beautiful Stone Patio",
         "Custom natural stone patio with outdoor seating area"
       ),
       galleryImages: [
         createAsset(
           "hardscape-1",
-          "https://images.unsplash.com/photo-1564013434775-c8b9fb14b4d9?w=600&h=400&fit=crop",
+          "https://plus.unsplash.com/premium_photo-1661954483883-edd65eac3577?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "Stone Patio",
           "Natural stone patio installation"
         ),
@@ -345,7 +345,7 @@ Our hardscaping services include natural stone patios, paver installations, reta
         ),
         createAsset(
           "hardscape-4",
-          "https://images.unsplash.com/photo-1564013434775-c8b9fb14b4d9?w=600&h=400&fit=crop",
+          "https://images.unsplash.com/photo-1713383658782-60a9593d200e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "Outdoor Kitchen",
           "Complete outdoor kitchen installation"
         ),
@@ -357,7 +357,7 @@ Our hardscaping services include natural stone patios, paver installations, reta
         ),
         createAsset(
           "hardscape-6",
-          "https://images.unsplash.com/photo-1564013434775-c8b9fb14b4d9?w=600&h=400&fit=crop",
+          "https://images.unsplash.com/photo-1713383658782-60a9593d200e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "Steps & Entrance",
           "Natural stone steps and entrance"
         ),
@@ -436,14 +436,14 @@ Spring services include bed cleanup, pruning, mulching, debris removal, and prep
       ],
       featuredImage: createAsset(
         "cleanup-hero",
-        "https://images.unsplash.com/photo-1625149813596-2ee5b4d9b68d?w=1200&h=800&fit=crop",
+        "https://images.unsplash.com/photo-1734079692160-fcbe4be6ab96?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "Fall Cleanup Service",
         "Professional fall cleanup and leaf removal service"
       ),
       galleryImages: [
         createAsset(
           "cleanup-1",
-          "https://images.unsplash.com/photo-1625149813596-2ee5b4d9b68d?w=600&h=400&fit=crop",
+          "https://images.unsplash.com/photo-1634081727680-fa43e3237d5a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "Leaf Removal",
           "Comprehensive fall leaf removal"
         ),
@@ -461,7 +461,7 @@ Spring services include bed cleanup, pruning, mulching, debris removal, and prep
         ),
         createAsset(
           "cleanup-4",
-          "https://images.unsplash.com/photo-1625149813596-2ee5b4d9b68d?w=600&h=400&fit=crop",
+          "https://images.unsplash.com/photo-1725334775507-82772a52612a?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "Mulching",
           "Fresh mulch application"
         ),
@@ -571,7 +571,7 @@ Our irrigation services include complete system design, zone planning based on p
         ),
         createAsset(
           "irrigation-3",
-          "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&h=400&fit=crop",
+          "https://images.unsplash.com/photo-1713383658782-60a9593d200e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "Smart Controller",
           "Smart irrigation controller installation"
         ),
@@ -699,7 +699,7 @@ Our tree and shrub services include proper pruning techniques, structural assess
         ),
         createAsset(
           "tree-5",
-          "https://images.unsplash.com/photo-1625149813596-2ee5b4d9b68d?w=600&h=400&fit=crop",
+          "https://images.unsplash.com/photo-1713383658782-60a9593d200e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "Emergency Service",
           "Emergency tree service and cleanup"
         ),
@@ -797,7 +797,7 @@ export const portfolioProjects: PortfolioProject[] = [
       ),
       afterImage: createAsset(
         "project-3-after",
-        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=600&fit=crop",
+        "https://plus.unsplash.com/premium_photo-1661751889999-762ee67f68fa?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "After: Professional Landscape",
         "Beautifully landscaped office complex"
       ),
@@ -816,13 +816,13 @@ export const portfolioProjects: PortfolioProject[] = [
         "Custom outdoor kitchen and seating area with fire feature and privacy landscaping.",
       beforeImage: createAsset(
         "project-4-before",
-        "https://images.unsplash.com/photo-1528358540946-a5db600dad73?w=800&h=600&fit=crop",
+        "https://plus.unsplash.com/premium_photo-1661954483883-edd65eac3577?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "Before: Empty Patio Area",
         "Basic patio before renovation"
       ),
       afterImage: createAsset(
         "project-4-after",
-        "https://images.unsplash.com/photo-1519452575417-564b1406b547?w=800&h=600&fit=crop",
+        "https://plus.unsplash.com/premium_photo-1665657351594-14473b25fe22?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "After: Entertainment Paradise",
         "Complete outdoor entertainment area"
       ),
@@ -872,7 +872,7 @@ export const portfolioProjects: PortfolioProject[] = [
       ),
       afterImage: createAsset(
         "project-6-after",
-        "https://images.unsplash.com/photo-1593770905342-94519fd50ad3?w=800&h=600&fit=crop",
+        "https://plus.unsplash.com/premium_photo-1665657351594-14473b25fe22?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "After: Native Paradise",
         "Beautiful native plant garden"
       ),
@@ -922,7 +922,7 @@ export const portfolioProjects: PortfolioProject[] = [
       ),
       afterImage: createAsset(
         "project-8-after",
-        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=600&fit=crop",
+        "https://plus.unsplash.com/premium_photo-1661954483883-edd65eac3577?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "After: Full Restoration",
         "Restored commercial landscape"
       ),
@@ -952,7 +952,7 @@ export const portfolioProjects: PortfolioProject[] = [
       ),
       afterImage: createAsset(
         "project-9-after",
-        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=600&fit=crop",
+        "https://plus.unsplash.com/premium_photo-1661954483883-edd65eac3577?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "After: Estate Paradise",
         "Magnificent estate landscape"
       ),
@@ -996,7 +996,7 @@ export const portfolioProjects: PortfolioProject[] = [
         "Tropical-inspired poolside landscape with privacy screening, entertaining areas, and pool-safe plantings.",
       beforeImage: createAsset(
         "project-11-before",
-        "https://images.unsplash.com/photo-1528358540946-a5db600dad73?w=800&h=600&fit=crop",
+        "https://plus.unsplash.com/premium_photo-1661954483883-edd65eac3577?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "Before: Basic Pool Area",
         "Pool area before landscaping"
       ),
