@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://cagleslandscaping.com/api/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /private/
+
+# Allow important pages
+Allow: /
+Allow: /about
+Allow: /contact
+Allow: /portfolio
+Allow: /services/
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Host preference
+Host: https://cagleslandscaping.com
