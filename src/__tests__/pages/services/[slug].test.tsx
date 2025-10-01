@@ -56,8 +56,8 @@ jest.mock('@/components/ui/Button', () => ({
 // Mock ExportedImage
 jest.mock('next-image-export-optimizer', () => ({
   __esModule: true,
-  default: ({ src, alt, ...props }: any) => (
-    <img src={src} alt={alt} data-testid="optimized-image" {...props} />
+  default: ({ src, alt }: { src: string; alt: string }) => (
+    <img src={src} alt={alt} data-testid="optimized-image" />
   ),
 }));
 
@@ -225,7 +225,7 @@ describe('getStaticPaths', () => {
 
     expect(result.paths).toHaveLength(mockServices.length);
 
-    result.paths.forEach((path: any, index: number) => {
+    result.paths.forEach((path: { params: { slug: string } }, index: number) => {
       expect(path.params.slug).toBe(mockServices[index].slug);
     });
   });

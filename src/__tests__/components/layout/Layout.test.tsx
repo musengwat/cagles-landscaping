@@ -113,6 +113,7 @@ describe('Layout Component', () => {
 
   it('uses default title when none provided', () => {
     const propsWithoutTitle = { ...defaultProps };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     delete (propsWithoutTitle as any).title;
 
     render(<Layout {...propsWithoutTitle} />);

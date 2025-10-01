@@ -275,7 +275,6 @@ describe('Textarea Component', () => {
       </form>
     );
 
-    const form = screen.getByRole('form') || screen.getByTestId('form');
     const submitButton = screen.getByRole('button', { name: /submit/i });
 
     submitButton.click();

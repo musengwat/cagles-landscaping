@@ -42,8 +42,8 @@ jest.mock('@/components/ui/Card', () => ({
 // Mock ExportedImage
 jest.mock('next-image-export-optimizer', () => ({
   __esModule: true,
-  default: ({ src, alt, ...props }: any) => (
-    <img src={src} alt={alt} data-testid="optimized-image" {...props} />
+  default: ({ src, alt }: { src: string; alt: string }) => (
+    <img src={src} alt={alt} data-testid="optimized-image" />
   ),
 }));
 

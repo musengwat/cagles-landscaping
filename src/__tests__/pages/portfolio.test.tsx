@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Portfolio, { getStaticProps } from '@/pages/portfolio';
-import { mockPortfolioItems } from '@/lib/mockData';
+import { portfolioProjects } from '@/lib/mockData';
 import '@testing-library/jest-dom';
 
 // Mock Next.js router
@@ -34,18 +34,19 @@ jest.mock('@/components/layout/Layout', () => ({
   )
 }));
 
-// Mock PortfolioGallery component
-jest.mock('@/components/features/PortfolioGallery', () => ({
-  PortfolioGallery: ({ items }: { items: any[] }) => (
-    <div data-testid="portfolio-gallery">
-      {items.map((item, index) => (
-        <div key={item.id || index} data-testid="portfolio-item">
-          <span>{item.title}</span>
-          <span>{item.category}</span>
-        </div>
-      ))}
-    </div>
-  )
+// Mock ExportedImage
+jest.mock('next-image-export-optimizer', () => ({
+  __esModule: true,
+  default: ({ src, alt, width, height, className }: { src: string; alt: string; width?: number; height?: number; className?: string }) => (
+    <img
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      className={className}
+      data-testid="optimized-image"
+    />
+  ),
 }));
 
 // Mock Button component
@@ -62,7 +63,7 @@ jest.mock('@/components/ui/Button', () => ({
 }));
 
 const mockProps = {
-  portfolioItems: mockPortfolioItems
+  projects: portfolioProjects
 };
 
 describe('Portfolio Page', () => {
@@ -84,23 +85,26 @@ describe('Portfolio Page', () => {
     expect(screen.getByText(/Our Portfolio/i)).toBeInTheDocument();
   });
 
-  it('renders the portfolio gallery', () => {
+  it('displays project cards', () => {
     render(<Portfolio {...mockProps} />);
-    expect(screen.getByTestId('portfolio-gallery')).toBeInTheDocument();
+    const cards = screen.getAllByTestId('card');
+    expect(cards.length).toBeGreaterThan(0);
   });
 
-  it('displays all portfolio items', () => {
+  it('displays all portfolio projects', () => {
     render(<Portfolio {...mockProps} />);
-    const portfolioItems = screen.getAllByTestId('portfolio-item');
-    expect(portfolioItems.length).toBe(mockPortfolioItems.length);
+
+    portfolioProjects.forEach(item => {
+      expect(screen.getByText(item.fields.title)).toBeInTheDocument();
+    });
   });
 
-  it('shows portfolio item details', () => {
+  it('shows project details and categories', () => {
     render(<Portfolio {...mockProps} />);
 
-    mockPortfolioItems.forEach(item => {
-      expect(screen.getByText(item.title)).toBeInTheDocument();
-      expect(screen.getByText(item.category)).toBeInTheDocument();
+    portfolioProjects.forEach(item => {
+      expect(screen.getByText(item.fields.title)).toBeInTheDocument();
+      expect(screen.getByText(item.fields.category)).toBeInTheDocument();
     });
   });
 
@@ -204,25 +208,23 @@ describe('getStaticProps', () => {
     const result = await getStaticProps({});
 
     expect(result).toHaveProperty('props');
-    expect(result.props).toHaveProperty('portfolioItems');
-    expect(Array.isArray(result.props.portfolioItems)).toBe(true);
+    expect(result.props).toHaveProperty('projects');
+    expect(Array.isArray(result.props.projects)).toBe(true);
   });
 
-  it('returns portfolio items with required properties', async () => {
+  it('returns projects with required properties', async () => {
     const result = await getStaticProps({});
 
-    result.props.portfolioItems.forEach((item: any) => {
-      expect(item).toHaveProperty('id');
-      expect(item).toHaveProperty('title');
-      expect(item).toHaveProperty('description');
-      expect(item).toHaveProperty('category');
-      expect(item).toHaveProperty('beforeImage');
-      expect(item).toHaveProperty('afterImage');
+    result.props.projects.forEach((item: { sys: { id: string }; fields: { title: string; category: string } }) => {
+      expect(item).toHaveProperty('sys');
+      expect(item).toHaveProperty('fields');
+      expect(item.fields).toHaveProperty('title');
+      expect(item.fields).toHaveProperty('category');
     });
   });
 
-  it('returns all portfolio items from mock data', async () => {
+  it('returns all projects from mock data', async () => {
     const result = await getStaticProps({});
-    expect(result.props.portfolioItems).toHaveLength(mockPortfolioItems.length);
+    expect(result.props.projects).toHaveLength(portfolioProjects.length);
   });
 });

@@ -271,6 +271,7 @@ describe('Performance Library', () => {
 
     it('handles performance API not being available', () => {
       const originalPerformance = global.performance;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       delete (global as any).performance;
 
       const testFunction = () => 'result';

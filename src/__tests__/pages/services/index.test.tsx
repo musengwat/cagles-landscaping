@@ -56,8 +56,8 @@ jest.mock('@/components/ui/Button', () => ({
 // Mock ExportedImage
 jest.mock('next-image-export-optimizer', () => ({
   __esModule: true,
-  default: ({ src, alt, ...props }: any) => (
-    <img src={src} alt={alt} data-testid="optimized-image" {...props} />
+  default: ({ src, alt }: { src: string; alt: string }) => (
+    <img src={src} alt={alt} data-testid="optimized-image" />
   ),
 }));
 
@@ -240,7 +240,7 @@ describe('getStaticProps', () => {
   it('returns services with required properties', async () => {
     const result = await getStaticProps({});
 
-    result.props.services.forEach((service: any) => {
+    result.props.services.forEach((service: { id: string; name: string; slug: string; description: string; features: string[]; image: string }) => {
       expect(service).toHaveProperty('id');
       expect(service).toHaveProperty('name');
       expect(service).toHaveProperty('slug');

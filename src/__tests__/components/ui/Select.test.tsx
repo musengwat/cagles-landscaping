@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Select } from '@/components/ui/Select';
 import '@testing-library/jest-dom';
@@ -245,7 +245,7 @@ describe('Select Component', () => {
   });
 
   it('handles custom option rendering', () => {
-    const customRenderOption = (option: any) => (
+    const customRenderOption = (option: { value: string; label: string }) => (
       <div data-testid={`custom-${option.value}`}>
         {option.label} - Custom
       </div>
