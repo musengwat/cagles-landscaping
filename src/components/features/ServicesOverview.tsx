@@ -1,51 +1,63 @@
-import Link from 'next/link';
+import Link from "next/link";
 import {
   Scissors,
   TreePine,
   Mountain,
   Leaf,
   Droplets,
-  Trees
-} from 'lucide-react';
-import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/Card';
-import { Button } from '@/components/ui/Button';
+  Trees,
+} from "lucide-react";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardFooter,
+} from "@/components/ui/Card";
+import { Button } from "@/components/ui/Button";
 
 const services = [
   {
-    title: 'Lawn Care & Maintenance',
-    description: 'Professional weekly and bi-weekly lawn maintenance to keep your grass healthy and beautiful year-round.',
+    title: "Lawn Care & Maintenance",
+    description:
+      "Professional weekly and bi-weekly lawn maintenance to keep your grass healthy and beautiful year-round.",
     icon: Scissors,
-    href: '/services/lawn-care',
+    href: "/services/lawn-care",
   },
   {
-    title: 'Landscape Design',
-    description: 'Custom landscape design and installation services to create beautiful, functional outdoor spaces.',
+    title: "Landscape Design",
+    description:
+      "Custom landscape design and installation services to create beautiful, functional outdoor spaces.",
     icon: TreePine,
-    href: '/services/landscape-design',
+    href: "/services/landscape-design",
   },
   {
-    title: 'Hardscaping & Patios',
-    description: 'Professional hardscaping services including patios, walkways, retaining walls, and outdoor living spaces.',
+    title: "Hardscaping & Patios",
+    description:
+      "Professional hardscaping services including patios, walkways, retaining walls, and outdoor living spaces.",
     icon: Mountain,
-    href: '/services/hardscaping',
+    href: "/services/hardscaping",
   },
   {
-    title: 'Seasonal Cleanup',
-    description: 'Comprehensive spring and fall cleanup services to prepare your landscape for changing seasons.',
+    title: "Seasonal Cleanup",
+    description:
+      "Comprehensive spring and fall cleanup services to prepare your landscape for changing seasons.",
     icon: Leaf,
-    href: '/services/seasonal-cleanup',
+    href: "/services/seasonal-cleanup",
   },
   {
-    title: 'Irrigation Systems',
-    description: 'Professional irrigation system design, installation, and maintenance to keep your landscape properly watered.',
+    title: "Irrigation Systems",
+    description:
+      "Professional irrigation system design, installation, and maintenance to keep your landscape properly watered.",
     icon: Droplets,
-    href: '/services/irrigation',
+    href: "/services/irrigation",
   },
   {
-    title: 'Tree & Shrub Care',
-    description: 'Professional tree and shrub care including pruning, health assessments, and pest management.',
+    title: "Tree & Shrub Care",
+    description:
+      "Professional tree and shrub care including pruning, health assessments, and pest management.",
     icon: Trees,
-    href: '/services/tree-care',
+    href: "/services/tree-care",
   },
 ];
 
@@ -59,8 +71,8 @@ export function ServicesOverview() {
             Our Services
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto text-balance">
-            We provide comprehensive landscaping services to transform and maintain
-            your outdoor spaces throughout Northwest Arkansas.
+            We provide comprehensive landscaping services to transform and
+            maintain your outdoor spaces throughout Northwest Arkansas.
           </p>
         </div>
 
@@ -70,12 +82,13 @@ export function ServicesOverview() {
             const IconComponent = service.icon;
 
             return (
-              <Card key={service.href} className="group hover:shadow-lg transition-all duration-300">
+              <Card
+                key={service.href}
+                className="group hover:shadow-lg transition-all duration-300"
+              >
                 <CardHeader>
-                  <div className="flex items-center space-x-4 mb-4">
-                    <div className="flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                      <IconComponent className="h-6 w-6 text-primary group-hover:text-white" />
-                    </div>
+                  <div className=" space-x-4 mb-4 flex items-center justify-center w-12 h-12 bg-primary/10 rounded-lg group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <IconComponent className="h-6 w-6 text-primary group-hover:text-white" />
                   </div>
                   <CardTitle className="text-xl">{service.title}</CardTitle>
                   <CardDescription className="text-base leading-relaxed">

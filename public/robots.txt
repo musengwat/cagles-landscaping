@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://cagleslandscaping.com/api/sitemap.xml
+Sitemap: https://cagleslandscaping.com/sitemap.xml
 
 # Disallow admin and private areas
 Disallow: /api/

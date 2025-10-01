@@ -1,14 +1,14 @@
-import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react';
-import { testimonials } from '@/lib/mockData';
-import { Button } from '@/components/ui/Button';
+import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
+import { testimonials } from "@/lib/mockData";
+import { Button } from "@/components/ui/Button";
 
 export function TestimonialsCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying] = useState(true);
 
   // Filter to featured testimonials
-  const featuredTestimonials = testimonials.filter(t => t.fields.featured);
+  const featuredTestimonials = testimonials.filter((t) => t.fields.featured);
 
   // Auto-rotate testimonials
   useEffect(() => {
@@ -28,11 +28,15 @@ export function TestimonialsCarousel() {
   };
 
   const goToPrevious = () => {
-    setCurrentIndex(currentIndex === 0 ? featuredTestimonials.length - 1 : currentIndex - 1);
+    setCurrentIndex(
+      currentIndex === 0 ? featuredTestimonials.length - 1 : currentIndex - 1
+    );
   };
 
   const goToNext = () => {
-    setCurrentIndex(currentIndex === featuredTestimonials.length - 1 ? 0 : currentIndex + 1);
+    setCurrentIndex(
+      currentIndex === featuredTestimonials.length - 1 ? 0 : currentIndex + 1
+    );
   };
 
   const renderStars = (rating: number) => {
@@ -40,7 +44,7 @@ export function TestimonialsCarousel() {
       <Star
         key={i}
         className={`h-5 w-5 ${
-          i < rating ? 'text-yellow-400 fill-current' : 'text-gray-300'
+          i < rating ? "text-yellow-400 fill-current" : "text-gray-300"
         }`}
       />
     ));
@@ -59,8 +63,8 @@ export function TestimonialsCarousel() {
             What Our Clients Say
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto text-balance">
-            Don&apos;t just take our word for it. Here&apos;s what our satisfied clients
-            throughout Northwest Arkansas have to say about our work.
+            Don&apos;t just take our word for it. Here&apos;s what our satisfied
+            clients throughout Northwest Arkansas have to say about our work.
           </p>
         </div>
 
@@ -77,31 +81,18 @@ export function TestimonialsCarousel() {
             >
               <ChevronLeft className="h-4 w-4" />
             </Button>
-
-            <div className="flex items-center space-x-2">
-              <button
-                onClick={() => setIsPlaying(!isPlaying)}
-                className="text-sm text-text-secondary hover:text-primary transition-colors duration-200"
-                aria-label={isPlaying ? 'Pause carousel' : 'Play carousel'}
-              >
-                {isPlaying ? 'Pause' : 'Play'}
-              </button>
-
-              {/* Dot Indicators */}
-              <div className="flex space-x-2 mx-4">
-                {featuredTestimonials.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => goToSlide(index)}
-                    className={`w-2 h-2 rounded-full transition-colors duration-200 ${
-                      index === currentIndex ? 'bg-primary' : 'bg-gray-300'
-                    }`}
-                    aria-label={`Go to testimonial ${index + 1}`}
-                  />
-                ))}
-              </div>
+            <div className="flex  items-center space-x-2 mx-4">
+              {featuredTestimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`w-2 h-2 rounded-full transition-colors duration-200 ${
+                    index === currentIndex ? "bg-primary" : "bg-gray-300"
+                  }`}
+                  aria-label={`Go to testimonial ${index + 1}`}
+                />
+              ))}
             </div>
-
             <Button
               variant="outline"
               size="sm"
@@ -112,7 +103,6 @@ export function TestimonialsCarousel() {
               <ChevronRight className="h-4 w-4" />
             </Button>
           </div>
-
           {/* Testimonial Content */}
           <div className="relative overflow-hidden">
             <div
@@ -155,8 +145,42 @@ export function TestimonialsCarousel() {
                 </div>
               ))}
             </div>
-          </div>
+            {/* Carousel Controls */}
+            <div className="flex items-center justify-between mb-8">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={goToPrevious}
+                className="p-2"
+                aria-label="Previous testimonial"
+              >
+                <ChevronLeft className="h-4 w-4" />
+              </Button>
 
+              <div className="flex  items-center space-x-2 mx-4">
+                {featuredTestimonials.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => goToSlide(index)}
+                    className={`w-2 h-2 rounded-full transition-colors duration-200 ${
+                      index === currentIndex ? "bg-primary" : "bg-gray-300"
+                    }`}
+                    aria-label={`Go to testimonial ${index + 1}`}
+                  />
+                ))}
+              </div>
+
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={goToNext}
+                className="p-2"
+                aria-label="Next testimonial"
+              >
+                <ChevronRight className="h-4 w-4" />
+              </Button>
+            </div>
+          </div>
           {/* Mobile Navigation */}
           <div className="flex justify-center space-x-4 mt-8 md:hidden">
             <Button
@@ -188,11 +212,15 @@ export function TestimonialsCarousel() {
                 <div className="flex justify-center space-x-1 mb-1">
                   {renderStars(5)}
                 </div>
-                <div className="text-sm text-text-secondary">Average Rating</div>
+                <div className="text-sm text-text-secondary">
+                  Average Rating
+                </div>
               </div>
               <div className="w-px h-12 bg-gray-200" />
               <div>
-                <div className="text-2xl font-bold text-primary">{testimonials.length}+</div>
+                <div className="text-2xl font-bold text-primary">
+                  {testimonials.length}+
+                </div>
                 <div className="text-sm text-text-secondary">Happy Clients</div>
               </div>
               <div className="w-px h-12 bg-gray-200" />

@@ -17,6 +17,7 @@ export function ServiceHero({ service }: ServiceHeroProps) {
           src={service.fields.featuredImage.url}
           alt={service.fields.featuredImage.title}
           fill
+          priority
           className="object-cover opacity-30"
           sizes="100vw"
         />
@@ -110,8 +111,11 @@ export function ServiceHero({ service }: ServiceHeroProps) {
                 src={service.fields.featuredImage.url}
                 alt={service.fields.featuredImage.description}
                 fill
+                loading="lazy"
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTk5z7amFN0inylEhDkpTHJ//Z"
               />
             </div>
 
